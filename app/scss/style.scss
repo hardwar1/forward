@@ -1,0 +1,169 @@
+@import "libs";
+@import "vars";
+@import "fonts";
+@import "global";
+
+.header {
+  height: 100vh;
+  color: #fff;
+  background-image: url(../images/header/Bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+  &__wrapper-bg {
+    background: #111;
+  }
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  min-height: 11.34vh;
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 664px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: $menu-fonts, $sub-fonts;
+    line-height: 24px;
+  }
+
+  &__tel {
+    margin-left: auto;
+  }
+} /* .header-bar */
+
+.header-screen {
+  width: 100%;
+  height: 88.66vh;
+
+  &__body {
+    position: relative;
+    height: 88.66vh;
+  }
+
+  &__info {
+    position: absolute;
+    bottom: 10.3vh;
+    left: 0;
+    z-index: 5;
+    max-width: 670px;
+    text-align: left;
+  }
+
+  &__title {
+    margin-bottom: 42px;
+    font-size: 64px;
+    line-height: 65px;
+  }
+
+  &__text {
+    margin-bottom: 76px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__btn {
+    margin-bottom: 165px;
+  }
+
+  &__sertificat {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+.social {
+  width: 20px;
+}
+
+.go-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+
+/* /.header-screen  /.header */
+
+.beginners {
+  padding: 73px 0 35px;
+  background-color: #f8f8f8;
+
+  &__title {
+    margin-bottom: 66px;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 236px;
+      height: 2px;
+      content: "";
+      background-color: #e31e25;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__items-wrapper {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  &__item {
+    max-width: 370px;
+    padding-bottom: 36px;
+    margin: 0 15px;
+    text-align: center;
+  }
+
+  &__item-icon {
+    margin: 46px auto;
+  }
+
+  &__item-info {
+    width: 270px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 26px;
+    color: #222;
+  }
+
+  &__sub-text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #777;
+  }
+
+  &__item-btn {
+    display: block;
+    width: 270px;
+    height: 48px;
+    font-size: 16px;
+  }
+} /* /.beginners */
+
+.traders {
+  &__img {
+    width: 70vw;
+    height: 90%;
+  }
+}
